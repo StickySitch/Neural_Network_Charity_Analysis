@@ -1,6 +1,6 @@
 # Neural_Network_Charity_Analysis
 ## Overview
-Alphabet Soup has funded tens of thousands of applicant over the years. No one is ever looking to give money away for free, so to help Alphabet Soup improve their chances of funding successful operations, A deep learning model was developed using Python. 
+Alphabet Soup has funded tens of thousands of applicants over the years. No one is ever looking to give money away for free, so to help Alphabet Soup improve their chances of funding successful operations, A deep learning model was developed using Python. 
 
 Alphabet Soup has provided us with a [dataset](https://github.com/StickySitch/Neural_Network_Charity_Analysis/blob/main/Resources/charity_data.csv) containing more than 34,000 organizations that received their funding. Using the features within the [Alphabet Soup dataset](https://github.com/StickySitch/Neural_Network_Charity_Analysis/blob/main/Resources/charity_data.csv), A binary classifier is created to predict if applicants would be successful if funded.
 
@@ -57,13 +57,13 @@ The following number of neurons, layers, and activation functions were used for 
     -   Activation function: `tanh`
 - **`Total Neurons:`** 130 
 
-As you can see, each hidden layer has the activation fuction "relu". One other layer, our `Output layer` has been swtich from `sigmoid` to `tanh`. This was done to see if we could improve our models accurracy score. There was a slight improvement of `.03%`.
+As you can see, each hidden layer has the activation fuction `relu`. One other layer, our `Output layer` has been swtich from `sigmoid` to `tanh`. This was done to see if we could improve our models accurracy score. There was a slight improvement of `.03%`.
 
 - **`Were you able to achieve the target model performance?`**
 	- No. Besides the slight increase of `.03%` from the added layer and changing `sigmoid` to `tanh`, I was not able to get anywhere close to a `75%` accuracy score.
 
 - **`What steps did you take to try and increase model performance?`**
-	- As mentioned above their were a few steps taken to try and improve the models accuracy:
+	- As mentioned above there were a few steps taken to try and improve the models accuracy:
 		- **`Sigmoid to Tanh`:** With the trail and error approach in mind, I employed the power of the `Tanh` activation fuction to see if our models accuracy would improve. The output layer went from the `Sigmoid` activation to the `Tanh` activation, showing a slight increase in accuracy.
 		- **`Third Layer`:** A third hidden layer was added to our model. To avoid overfitting, I wanted to keep the number of neurons low (20).  
 		- **`Converted Dtypes`** Converted our `ASK_AMT` column to a `string`. The data within the column was binned by replacing values with less than 2,500 occurrences with `Other`. After encoding the `ASK_AMT` column with the other categorical variables, the accuracy score increased slightly.
