@@ -2,7 +2,7 @@
 ## Overview
 Alphabet Soup has funded tens of thousands of applicant over the years. No one is ever looking to give money away for free, so to help Alphabet Soup improve their chances of funding successful operations, A deep learning model was developed using Python. 
 
-Alphabet Soup has provided us with a dataset containing more than 34,000 organizations that received their funding. Using the features within the Alphabet Soup dataset, A binary classifier is created to predict if applicants would be successful if funded.
+Alphabet Soup has provided us with a [dataset](https://github.com/StickySitch/Neural_Network_Charity_Analysis/blob/main/Resources/charity_data.csv) containing more than 34,000 organizations that received their funding. Using the features within the [Alphabet Soup dataset](https://github.com/StickySitch/Neural_Network_Charity_Analysis/blob/main/Resources/charity_data.csv), A binary classifier is created to predict if applicants would be successful if funded.
 
 ### `Dataset Columns:`
 -   **`EIN`** and **`NAME`** — Identification columns
@@ -16,11 +16,10 @@ Alphabet Soup has provided us with a dataset containing more than 34,000 organiz
 -   **`SPECIAL_CONSIDERATIONS`** — Special consideration for application
 -   **`ASK_AMT`** — Funding amount requested
 -   **`IS_SUCCESSFUL`** — Was the money used effectively
-- 
+
+
 ## Results
-
 ### Preprocessing 
-
 - **`What variable(s) are considered the target(s) for your model?`**
 	- **`IS_SUCCESSFUL`:** This is our target because the `IS_SUCCESSFUL` tells us if they applicant was successful or not after funding.
 	
@@ -36,8 +35,6 @@ Alphabet Soup has provided us with a dataset containing more than 34,000 organiz
 		-   `INCOME_AMT` — Income classification
 		-   `SPECIAL_CONSIDERATIONS` — Special consideration for application
 		-   `ASK_AMT` — Funding amount requested
-
-
 - **`What variable(s) are neither targets nor features, and should be removed from the input data?`**
 	- As mentioned above, there are two columns that are not features; But wait, they're also not the target? So what are they? Useless, really. In this use case they will dropped and unused.
 		- **`EIN`** and **`NAME`** — Identification columns
